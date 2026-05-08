@@ -8,8 +8,8 @@ USDT/USDC top-ups · OpenAI-compatible · MCP-native · No card, no KYC
 
 [Website](https://llm4agents.com) · [API Docs](https://api.llm4agents.com/docs) · [npm](https://www.npmjs.com/org/llmforagents) · [Contact](mailto:hello@llm4agents.com)
 
-[![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![npm scope](https://img.shields.io/badge/npm-%40llmforagents-CB3837?logo=npm&logoColor=white)](https://www.npmjs.com/org/llmforagents)
+[![TypeScript SDK](https://img.shields.io/badge/TypeScript%20SDK-%40llmforagents%2Fsdk-3178C6?logo=typescript&logoColor=white)](https://www.npmjs.com/package/@llmforagents/sdk)
+[![Python SDK](https://img.shields.io/badge/Python%20SDK-llm4agents--sdk-3776AB?logo=python&logoColor=white)](https://pypi.org/project/llm4agents-sdk/)
 [![USDT](https://img.shields.io/badge/USDT-Solana%20%7C%20Polygon-26A17B?logo=tether&logoColor=white)](https://api.llm4agents.com/docs)
 [![USDC](https://img.shields.io/badge/USDC-Solana%20%7C%20Polygon-2775CA?logo=ethereum&logoColor=white)](https://api.llm4agents.com/docs)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](#license)
@@ -36,11 +36,25 @@ Top up an account with **USDT or USDC** on Solana or Polygon — the same unifie
 
 ## Products
 
+**SDKs**
+
 | Repository | Description | Package |
 |---|---|---|
-| [**sdk**](https://github.com/llmforagents/sdk) | TypeScript SDK — chat, tools, wallets, gasless transfers. Zero runtime deps. | [`@llmforagents/sdk`](https://www.npmjs.com/package/@llmforagents/sdk) |
-| [**agent-helper**](https://github.com/llmforagents/agent-helper) | CLI that configures 17+ coding agents (Claude Code, Cursor, Aider, Continue…) to route through llm4agents | [`@llmforagents/agent-helper`](https://www.npmjs.com/package/@llmforagents/agent-helper) |
-| [**agent-playground**](https://github.com/llmforagents/agent-playground) | Web playground for testing models, prompts and MCP tools | — |
+| [**sdk**](https://github.com/llmforagents/sdk) | Unified TypeScript SDK — chat, wallets, gasless transfers and MCP tools | [`@llmforagents/sdk`](https://www.npmjs.com/package/@llmforagents/sdk) |
+| [**sdk-python**](https://github.com/llmforagents/sdk-python) | Python SDK for gasless AI agent infrastructure | [`llm4agents-sdk`](https://pypi.org/project/llm4agents-sdk/) |
+
+**Tools**
+
+| Repository | Description | Package |
+|---|---|---|
+| [**agent-helper**](https://github.com/llmforagents/agent-helper) | CLI to configure llm4agents in popular AI tools and coding agents (Claude Code, Cursor, Aider, Continue…) | [`@llmforagents/agent-helper`](https://www.npmjs.com/package/@llmforagents/agent-helper) |
+
+**Showcases**
+
+| Repository | Description |
+|---|---|
+| [**ai-agent-council**](https://github.com/llmforagents/ai-agent-council) | Three frontier LLMs debate, one chairman synthesises — sharper answers than any single model |
+| [**agent-playground**](https://github.com/llmforagents/agent-playground) | Web playground for testing models, prompts and MCP tools |
 
 ## MCP server
 
@@ -66,8 +80,9 @@ Persistent 5-minute browser sessions with automatic proxy-tier escalation (direc
 # Configure your favorite coding agent in one command
 npx @llmforagents/agent-helper
 
-# Or use the SDK directly
-npm install @llmforagents/sdk
+# Or install an SDK directly
+npm install @llmforagents/sdk      # TypeScript
+pip install llm4agents-sdk         # Python
 ```
 
 ```ts
@@ -91,6 +106,7 @@ Register an agent and get an API key at [llm4agents.com](https://llm4agents.com)
 ## Stack
 
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white)
 ![Bun](https://img.shields.io/badge/-Bun-000000?style=flat&logo=bun&logoColor=white)
 ![Hono](https://img.shields.io/badge/-Hono-E36002?style=flat&logo=hono&logoColor=white)
